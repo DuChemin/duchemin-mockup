@@ -19,11 +19,25 @@
 <body id="home-page">
 
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-
+  
+    <div id="page-util-nav" class="navbar">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="advanced.html">Search</a></li>
+            <li><a href="results.html">Search Results</a></li>
+            <li><a href="show.html">Entry View</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
     <div id="utility-nav" class="navbar">
       <div class="navbar-inner">
         <div class="container-fluid">
-          <p class="navbar-text pull-right"><a href="#"><i class="icon-user"></i> My Account</a></p>
+          <p class="navbar-text pull-right"><a href="account.html"><i class="icon-user"></i> My Account</a></p>
         </div>
       </div>
     </div>
@@ -32,7 +46,7 @@
       <div class="row-fluid">
         <div class="span12">
           <hgroup class="span8">
-            <h1 id="main-title">Lost Voices: Du Chemin</h1>
+            <h1 id="main-title"><a href="index.html"><span class="main-title-pre">Lost Voices:</span> Du Chemin</a></h1>
             <h2 id="tagline">Tagline goes here.</h2>
           </hgroup>
           <a id="les-livres-link" class="btn btn-large btn-inverse" href="#"><i class="icon-book icon-white"></i> Explore <em>Les Livres</em></a>
@@ -50,7 +64,7 @@
           </a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Browse Works</a></li>
+              <li class=""><a href="#">Browse Works</a></li>
               <li><a href="#about">Reconstructions</a></li>
               <li><a href="#contact">About the Project</a></li>
             </ul>
@@ -114,7 +128,7 @@
           <h3 class="span4"><a href="#">Funder 3</a></h3>
         </div><!--/row-->
         <hr>
-        <p>&copy; Company 2012</p>
+        <p class="copyright">&copy; Copyright goes here 2012</p>
       </footer>
 
     </div><!--/.fluid-container-->

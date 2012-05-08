@@ -3,46 +3,63 @@ body { padding-bottom: 40px; }
 h1 { font-family: "crimson text", Georgia, serif; font-size: 32px; font-weight: 600; line-height: 42px; }
 h2 { font-family: "crimson text", Georgia, serif; font-size: 26px; font-style: italic; font-weight: 600; }
 h3 { color: #333; font-family: "crimson text", Georgia, serif; font-size: 20px; }
-#sidebar h3, #footer h3, .comments-list h3, #main hgroup h3 { color: #5f5f5f; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 16px; font-weight: 300; text-transform: uppercase; }
+h3 { color: #5f5f5f; font-family: "Helvetica Neue", Arial, sans-serif; font-size: 15px; font-weight: 300; text-transform: uppercase; }
 .container-fluid { margin: 0 auto; max-width: 90em; }
 #main { margin: 2em auto; }
 hr { clear: both; }
 
 /* UTILITY NAV */
+#page-util-nav { margin-bottom: 0;}
+#page-util-nav .navbar-inner { background: #444; min-height: 0; }
+#page-util-nav a { color: #eee; padding: 3px 10px; text-transform: uppercase; }
+
 #utility-nav { background: #eee; height: 32px; margin-bottom: 0; }
 #utility-nav .navbar-inner { 
-  background: transparent; 
+  background: #eee; 
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
 #utility-nav .navbar-text { 
-  background: #eee; 
+  background: #fafafa;
+  border-width: 0 1px 1px 1px;
+  border-color: #ddd;
+  border-style: solid; 
   line-height: 32px;
   padding: 0 1em;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+  -webkit-box-shadow: inset 0 0 5px #eee;
+  -moz-box-shadow: inset 0 0 5px #eee;
+  box-shadow: inset 0 0 5px #eee;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px; }
 
 /* MAIN TITLE */
-#title-container { background: #eee; padding: 8px 0 36px; max-width: none; }
+#title-container { background: #eee; padding: 8px 20px 36px; max-width: none; }
 #title-container .row-fluid { margin: 0 auto; max-width: 90em; }
-#main-title { font-size: 42px; line-height: 42px; }
-#title-container #tagline { color: #5a5a5a; }
+#main-title { color: #222; font-size: 42px; line-height: 42px; }
+#main-title a, #main-title a:hover, #main-title a:active { color: #222; text-decoration: none; }
+#main-title .main-title-pre { color: #484848; }
+#title-container #tagline { color: #646464; }
+#main-title, #tagline, #home-hero h1 {
+  -webkit-text-shadow: 0 1px 0 #fff;
+  -moz-text-shadow:    0 1px 0 #fff;
+  text-shadow:         0 1px 0 #fff; }
 #les-livres-link { float: right; margin-top: 18px; }
 
 /* MAIN NAVIGATION */
 #main-nav .navbar-inner {
 min-height: 40px;
-background: #555;
+background: url('../img/classy_fabric.png') repeat scroll 0 0 #555;
 -webkit-border-radius: 0;
 -moz-border-radius: 0;
 border-radius: 0;
--webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
--moz-box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
-box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25), 0 -1px 3px rgba(0,0,0,.25), inset 0 1px 3px rgba(0,0,0,0.75), inset 0 -1px 0 rgba(0,0,0,.1), inset 0 1px 0 rgba(0,0,0,.25);
+-moz-box-shadow:    0 1px 3px rgba(0,0,0,.25), 0 -1px 3px rgba(0,0,0,.25), inset 0 1px 3px rgba(0,0,0,0.75), inset 0 -1px 0 rgba(0,0,0,.1), inset 0 1px 0 rgba(0,0,0,.25);
+box-shadow:         0 1px 3px rgba(0,0,0,.25), 0 -1px 3px rgba(0,0,0,.25), inset 0 1px 3px rgba(0,0,0,0.75), inset 0 -1px 0 rgba(0,0,0,.1), inset 0 1px 0 rgba(0,0,0,.25);
 }
-#main-nav .nav li a { color: #fff; }
+#main-nav .nav li a { color: #fff; font-size: 18px; font-weight: 300; margin-right: 1em; }
+#main-nav .nav li a:hover { background-color: rgba(0,0,0,0.2); }
+#main-nav .nav li.active a { background-color: rgba(0,0,0,0.3); }
 
 /* MAIN CONTENT */
 h1.page-title { margin-bottom: 1em; }
@@ -74,11 +91,12 @@ dl.well-list { margin: 0; }
 .item-actions li { display: inline; margin-right: 1.5em; }
 
 /* SEARCH */
-
 #search-page #main .search-input { font-size: 21px; height: 27px; line-height: 27px; margin-right: 2%; width: 60%; }
 #search-page .search-buttons .btn { margin-right: 1em; }
 .nav-search-query { margin-bottom: 0; margin-right: 0.67em; }
-.advanced-link { color: #eee; }
+a.advanced-link, a.advanced-link:hover, a.advanced-link:active { color: #eee; line-height: 27px; }
+a.accordion-toggle { background: #eee; color: #444; font-size: 16px; font-weight: bold; line-height: 22px; }
+.results-container .tab-content {overflow: visible; }
 
 /* ITEM DISPLAY */
 .commonplaces.span12 { display: none; margin-left: 0; }
@@ -88,8 +106,11 @@ dl.well-list { margin: 0; }
 .line { display: inline-block; margin-bottom: 1.2em; width: 100%; }
 .measure { color: #7a7a7a; font-size: 14px; }
 .rhyme { color: #646464; font-size: 14px; }
-.line-text { font-family: "crimson text", Georgia, serif;  font-size: 20px; }
+.line-text, .favorite h3, .result h3 { font-family: "crimson text", Georgia, serif;  font-size: 20px; text-transform: none; }
 .notation-dropdown { float: right; margin-top: -2px; }
+
+/* FOOTER */
+.copyright { color: #777; text-align: center; }
 
 
 @media only screen and (min-width: 35em) {
