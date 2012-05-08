@@ -1,0 +1,177 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Advanced Search - Lost Voices: Du Chemin</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
+  <script src="js/vendor/modernizr-2.5.3.min.js"></script>
+</head>
+<body id="search-page">
+
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+    <div id="utility-nav" class="navbar">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <p class="navbar-text pull-right"><a href="#"><i class="icon-user"></i> My Account</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="title-container" class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <hgroup class="span8">
+            <h1 id="main-title">Lost Voices: Du Chemin</h1>
+            <h2 id="tagline">Tagline goes here.</h2>
+          </hgroup>
+          <a id="les-livres-link" class="btn btn-large btn-inverse" href="#"><i class="icon-book icon-white"></i> Explore <em>Les Livres</em></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-nav" class="navbar">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Browse Works</a></li>
+              <li><a href="#about">Reconstructions</a></li>
+              <li><a href="#contact">About the Project</a></li>
+            </ul>
+            <form class="navbar-search pull-right" action="">
+              <input type="text" class="nav-search-query span2" placeholder="Search">
+              <a href="advanced.html" class="advanced-link">Advanced search &raquo;</a>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div id="main" class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="search-heading row-fluid">
+            <h1 class="search-title page-title span8">Advanced Search</h1>
+          </div>
+          <div class="row-fluid">
+            <div class="span8 search-container content-container">
+              <form class="form-search" action="">
+                <input type="text" class="search-input">
+                <button type="submit" class="btn btn-large">Search</button>
+              </form>
+              <div class="accordion" id="search-accordion">
+                <h2>Limit by:</h2>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#search-accordion" href="#book-section">
+                      Book
+                    </a>
+                  </div>
+                  <div id="book-section" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                      <label class="checkbox" for="book1"><input type="checkbox" id="book1" name="book" value="premier livre" /> Premier livre contenant XXV chansons nouvelles</label>
+                      <label class="checkbox" for="book2"><input type="checkbox" id="book2" name="book" value="second livre" /> Second livre contenant XXVI chansons nouvelles</label>
+                      <label class="checkbox" for="book3"><input type="checkbox" id="book3" name="book" value="tiers livre" /> Tiers livre contenant XXII chansons nouvelles</label>
+                      <label class="checkbox" for="book4"><input type="checkbox" id="book4" name="book" value="quart livre" /> Quart livre contenant XXIIII chansons nouvelles</label>
+                      <label class="checkbox" for="book5"><input type="checkbox" id="book5" name="book" value="cinquiesme livre" /> Cinquiesme livre contenant XXV chansons nouvelles</label>
+                      <label class="checkbox" for="book6"><input type="checkbox" id="book6" name="book" value="sixiesme livre" /> Sixiesme livre contenant XXV chansons nouvelles</label>
+                      <label class="checkbox" for="book7"><input type="checkbox" id="book7" name="book" value="septiesme livre" /> Septiesme livre contenant XXIX chansons nouvelles</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#search-accordion" href="#composer-section">
+                      Composer
+                    </a>
+                  </div>
+                  <div id="composer-section" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <label class="checkbox" for="composer1"><input type="checkbox" id="composer1" name="composer" value="first composer" /> This Guy</label>
+                      <label class="checkbox" for="composer2"><input type="checkbox" id="composer2" name="composer" value="second composer" /> That Gal</label>
+                      <label class="checkbox" for="composer3"><input type="checkbox" id="composer3" name="composer" value="third composer" /> The Other One</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#search-accordion" href="#commonplace-section">
+                      Commonplace
+                    </a>
+                  </div>
+                  <div id="commonplace-section" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <label class="checkbox" for="commonplace1"><input type="checkbox" id="commonplace1" name="commonplace" value="first commonplace" /> First Commonplace</label>
+                      <label class="checkbox" for="commonplace2"><input type="checkbox" id="commonplace2" name="commonplace" value="second commonplace" /> Commonplace #2</label>
+                      <label class="checkbox" for="commonplace3"><input type="checkbox" id="commonplace3" name="commonplace" value="third commonplace" /> Last, but Not Least, Commonplace</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search-buttons">
+                <button class="btn btn-large btn-inverse">Search</button>
+                <button class="btn btn-large">Clear</button>
+              </div>
+            </div><!--/span-->
+            <div id="sidebar" class="span4">
+              <h3>Search Help</h3>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer id="footer">
+        <div class="row-fluid">
+          <h2>Created through the generous support of</h2>
+        </div><!--/row-->
+        <div class="row-fluid">
+          <h3 class="span4"><a href="#">Funder 1</a></h3>
+          <h3 class="span4"><a href="#">Funder 2</a></h3>
+          <h3 class="span4"><a href="#">Funder 3</a></h3>
+        </div><!--/row-->
+        <hr>
+        <p>&copy; Company 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+
+  <script src="js/bootstrap/bootstrap-transition.js"></script>
+  <script src="js/bootstrap/bootstrap-alert.js"></script>
+  <script src="js/bootstrap/bootstrap-modal.js"></script>
+  <script src="js/bootstrap/bootstrap-dropdown.js"></script>
+  <script src="js/bootstrap/bootstrap-tab.js"></script>
+  <script src="js/bootstrap/bootstrap-tooltip.js"></script>
+  <script src="js/bootstrap/bootstrap-popover.js"></script>
+  <script src="js/bootstrap/bootstrap-button.js"></script>
+  <script src="js/bootstrap/bootstrap-collapse.js"></script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!-- end scripts -->
+
+</body>
+</html>
